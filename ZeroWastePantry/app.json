@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "ZeroWaste Pantry",
+    "slug": "zerowaste-pantry",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.itwm106.zerowastepantry"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-asset"
+    ]
+  }
+}
