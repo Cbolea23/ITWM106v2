@@ -10,8 +10,9 @@
 
 | Slide(s) | Topic | Speaker |
 | :--- | :--- | :--- |
-| **Slides 1–2** | Title, Team Intro & Role Division | **Member 1 — Joshua V. Pornias** |
-| **Slides 3–4** | Problem Statement & Innovation | **Member 4 — Darryl Ingente** |
+| **Slides 1–2** | Title, Team Intro & Role Division | **Member 1 — Joshua V. Pornias** *(1 turn)* |
+| **Slide 3** | Problem Statement | **Member 4 — Darryl Ingente** |
+| **Slide 4** | Solution & Innovation | **Member 3 — Christian Louis Bolea** |
 | **Slide 5** | System Overview & 4-Layer Architecture | **Member 3 — Christian Louis Bolea** |
 | **Slide 6** | Database Schema & Full CRUD Operations | **Member 1 — Joshua V. Pornias** |
 | **Slide 7** | Content & UI/UX Design | **Member 4 — Darryl Ingente** |
@@ -43,7 +44,7 @@
 
 ---
 
-### Slide 3 & Slide 4: Problem Statement & Innovation — **Member 4 (Darryl Ingente)**
+### Slide 3: Problem Statement — **Member 4 (Darryl Ingente)**
 
 **[Slide 3 — Problem Statement]**  
 > **Darryl:**  
@@ -51,19 +52,19 @@
 > *First, **Forgotten Expiry Dates** — perishables like milk, leafy greens, and cooked leftovers get pushed to the back of the fridge until they spoil.*  
 > *Second, **No Urgency Prioritization** — paper lists and generic Notes apps cannot automatically compute days remaining or highlight what must be cooked first today.*  
 > *And third, **Hidden Financial Drain** — students and families rarely measure how many Pesos are lost monthly to spoiled groceries versus saved through timely meal planning.*  
-> *That led us to our core question: How can we give every student and household an effortless mobile tool that tells them what to cook first, tracks storage zones offline, and quantifies every Peso saved from waste?"*
+> *That led us to our core question: How can we give every student and household an effortless mobile tool that tells them what to cook first, tracks storage zones offline, and quantifies every Peso saved from waste? Now **Christian** will present our solution and system overview."*
+
+---
+
+### Slide 4 & Slide 5: Solution, Innovation & System Overview — **Member 3 (Christian Louis Bolea)**
 
 **[Slide 4 — Solution & Innovation]**  
-> **Darryl:**  
+> **Christian:**  
 > *"Our answer is **ZeroWaste Pantry**. What makes our solution innovative and game-changing compared to ordinary inventory or to-do apps are four core features:*  
 > *First, our **Dynamic Expiry Urgency Engine** in `expiryUtils.ts`, which automatically computes local calendar days remaining and sorts items into Expired, Today or ≤ 3 days, 4–7 days, and Fresh.*  
 > *Second, the **'Use This First' Priority Banner** in `UseFirstBanner.tsx`—a horizontal strip pinned above the pantry list so urgent ingredients appear immediately on launch with a one-tap 'Mark Consumed' button.*  
 > *Third, our **Sustainability & Peso Impact Score** in `AnalyticsScreen.tsx`, which calculates live Waste Prevention Rate, Money Saved, Money Lost, and category-specific shelf-life tips.*  
 > *And fourth, our **Live SQL Query Inspector** in `SqlInspectorModal.tsx`, which captures every `CREATE TABLE`, `SELECT`, `INSERT`, `UPDATE`, and `DELETE` statement with bound parameters in real time."*
-
----
-
-### Slide 5: System Overview & Architecture — **Member 3 (Christian Louis Bolea)**
 
 **[Slide 5 — System Overview & Architecture]**  
 > **Christian:**  
