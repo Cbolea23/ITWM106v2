@@ -12,7 +12,8 @@
 | :--- | :--- | :--- |
 | **Slides 1–2** | Title, Team Intro & Role Division | **Member 1 — Joshua V. Pornias** |
 | **Slides 3–4** | Problem Statement & Innovation | **Member 4 — Darryl Ingente** |
-| **Slides 5–6** | System Overview, Schema & CRUD | **Member 1 — Joshua V. Pornias** |
+| **Slide 5** | System Overview & 4-Layer Architecture | **Member 3 — Christian Louis Bolea** |
+| **Slide 6** | Database Schema & Full CRUD Operations | **Member 1 — Joshua V. Pornias** |
 | **Slide 7** | Content & UI/UX Design | **Member 4 — Darryl Ingente** |
 | **Slide 8 + Live App** | End-to-End Live App Demonstration | **Member 2 — Wayne Nagares** *(uses own script)* |
 | **Slide 9** | Reflections & Contributions (Members 1 & 3) | **Joshua V. Pornias** & **Christian Louis Bolea** |
@@ -38,7 +39,7 @@
 > - ***Wayne Nagares** is our Core Developer for Create and Update, who built the validated Add/Edit modal, Quick-Fill presets, expiry shortcuts, and quantity/status updates—and he will also lead our live app demonstration shortly.*  
 > - ***Christian Louis Bolea** is our Core Developer for Read, Filter, and Delete, handling the search bar, storage/category/status filters, sorting, the Use First strip, and safe delete confirmation.*  
 > - ***Darryl Ingente** is our UI/UX and Navigation Lead, who designed the Eco-Fresh design system, color-coded urgency hierarchy, KPI hero card, and bottom navigation.*  
-> - *And **Allen Seares** is our Analytics, QA, Docs, and Video Lead, who built the waste prevention score, Peso savings analytics, automated unit/CRUD tests, and our documentation and presentation deck."*
+> - *And **Allen Seares** is our Analytics, Docs & Video Lead Editor, who built the waste prevention score, Peso savings analytics, automated unit/CRUD tests, and our documentation and presentation deck."*
 
 ---
 
@@ -62,16 +63,20 @@
 
 ---
 
-### Slide 5 & Slide 6: System Overview, Schema & CRUD — **Member 1 (Joshua V. Pornias)**
+### Slide 5: System Overview & Architecture — **Member 3 (Christian Louis Bolea)**
 
 **[Slide 5 — System Overview & Architecture]**  
-> **Joshua:**  
-> *"Moving on to our system overview, ZeroWaste Pantry uses a clean four-layer architecture:*  
-> - ***Layer 1** is our **Presentation UI**, containing our screens and reusable components.*  
-> - ***Layer 2** is the **Application State Controller** in `App.tsx`, which manages tab navigation, modal state, delete confirmations, toast feedback, and reactive SQL reloads.*  
-> - ***Layer 3** is our **Domain and Analytics Engine** in `expiryUtils.ts`, consisting of pure unit-tested functions for day-difference math, urgency classification, search/filter/sort, and Peso KPIs.*  
+> **Christian:**  
+> *"Moving on to our system overview, ZeroWaste Pantry is built around a clean four-layer architecture:*  
+> - ***Layer 1** is our **Presentation UI**, which includes `DashboardScreen`, `AnalyticsScreen`, `TeamGuideScreen`, and reusable components like `ItemFormModal`, `PantryItemCard`, and `SqlInspectorModal`.*  
+> - ***Layer 2** is the **Application State Controller** in `App.tsx`, managing tab navigation, modal states, delete confirmations, toast feedback, and reactive SQL reloads.*  
+> - ***Layer 3** is our **Domain and Analytics Engine** in `expiryUtils.ts`, containing pure unit-tested functions for day-difference math, urgency classification, search, filtering, sorting, and Peso KPIs.*  
 > - ***Layer 4** is our **Dual-Engine Persistence** in `db.ts` and `seedData.ts`: on Android and iOS, it uses `expo-sqlite` (`zerowaste_pantry.db`) for offline-first local storage, while on Expo Web and Node tests it uses a synchronized SQL table and logger.*  
-> *Our tech stack combines React Native 0.76.5, Expo SDK 52, strict TypeScript, `expo-sqlite`, and the Node Test Runner."*
+> *Our tech stack combines React Native 0.76.5, Expo SDK 52, strict TypeScript, `expo-sqlite`, and the Node Test Runner. Now **Joshua** will explain our database schema and CRUD implementation."*
+
+---
+
+### Slide 6: Database Schema & Full CRUD — **Member 1 (Joshua V. Pornias)**
 
 **[Slide 6 — Database Schema & Full CRUD Operations]**  
 > **Joshua:**  
